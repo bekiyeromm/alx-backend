@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
- a module to run 0-index.html web page
+ a module to run 2-index.html web page
 """
 
 from flask import Flask, render_template, request
@@ -9,6 +9,7 @@ from flask_babel import Babel
 
 app = Flask(__name__)
 babel = Babel(app)
+""" instantiate the Babel object """
 
 
 class Config(object):
@@ -27,7 +28,7 @@ app.config.from_object(Config)
 @app.route('/')
 def index():
     """
-    a function which renders 0-index.html file
+    a function which renders 2-index.html file
     """
     return render_template('2-index.html')
 
