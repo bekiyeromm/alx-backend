@@ -4,7 +4,7 @@
  a module to run 0-index.html web page
 """
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_babel import Babel
 
 app = Flask(__name__)
@@ -21,7 +21,7 @@ class Config(object):
 
 
 app.config.from_object(Config)
-"""""" Use that class as config for Flask app """
+""" Use that class as config for Flask app """
 
 
 @app.route('/')
