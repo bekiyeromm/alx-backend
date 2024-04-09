@@ -16,11 +16,12 @@ class Config(object):
     config class
     """
     LANGUAGES = ["en", "fr"]
-    BABEL_DEFAULT_LOCAL = 'en'
+    BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
 app.config.from_object(Config)
+"""""" Use that class as config for Flask app """
 
 
 @app.route('/')
